@@ -1255,17 +1255,13 @@ class Flip_Box extends Base_Widget {
 			]
 		);
 
-		$this->add_group_control(
-			Group_Control_Background::get_type(),
+		$this->add_control(
+			'button_background_color',
 			[
-				'name' => 'button_background',
-				'types' => [ 'classic', 'gradient' ],
-				'exclude' => [ 'image' ],
-				'selector' => '{{WRAPPER}} .elementor-flip-box__button',
-				'fields_options' => [
-					'background' => [
-						'default' => 'classic',
-					],
+				'label' => __( 'Background Color', 'elementor-pro' ),
+				'type' => Controls_Manager::COLOR,
+				'selectors' => [
+					'{{WRAPPER}} .elementor-flip-box__button' => 'background-color: {{VALUE}};',
 				],
 			]
 		);
@@ -1304,17 +1300,13 @@ class Flip_Box extends Base_Widget {
 			]
 		);
 
-		$this->add_group_control(
-			Group_Control_Background::get_type(),
+		$this->add_control(
+			'button_hover_background_color',
 			[
-				'name' => 'button_hover_background',
-				'types' => [ 'classic', 'gradient' ],
-				'exclude' => [ 'image' ],
-				'selector' => '{{WRAPPER}} .elementor-flip-box__button:hover',
-				'fields_options' => [
-					'background' => [
-						'default' => 'classic',
-					],
+				'label' => __( 'Background Color', 'elementor-pro' ),
+				'type' => Controls_Manager::COLOR,
+				'selectors' => [
+					'{{WRAPPER}} .elementor-flip-box__button:hover' => 'background-color: {{VALUE}};',
 				],
 			]
 		);

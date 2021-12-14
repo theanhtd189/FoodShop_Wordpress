@@ -1,0 +1,44 @@
+Ba chỉ bò - 120000
+Bắp hoa bò - 400000
+Bít tết bò - 375000
+Dẻ sườn bò - 450000
+Gầu bò - 160000
+Sườn bò - 205000
+Thăn file bò - 265000
+Thăn lưng vai bò - 390000
+Thăn ngoại dưới bò - 150000
+Thăn ngoại trên bò -150000
+Thăn vai bò - 145000
+
+Ba rọi lóc heo - 140000
+Ba rọi sườn heo - 155000
+Bắp giò heo - 113000
+Cốt lết heo - 100000
+Da heo - 55000
+Đùi gọ heo - 100000
+Đùi vai heo - 95000
+Giò heo sau - 100000
+Giò heo trước - 95000
+Mỡ thịt heo - 65000
+Nạc dăm heo - 120000
+Nạc đùi heo - 110000
+Nạc vai heo - 105000
+Nọng heo - 70000
+Sườn già heo - 120000
+Thịt heo xay - 80000
+Xương đuôi heo - 85000
+Xương ống heo - 80000
+
+Gà vịt
+Cánh gà - 75000
+Chân gà - 60000
+Đùi gà góc tư - 42000
+Đùi tỏi gà - 62000
+Gà nguyên con - 120000
+Má đùi gà - 38000
+Mề gà - 60000
+Sụn gà - 100000
+Ức gà - 48000
+Ức vịt - 50000
+Vịt nguyên con - 130000
+Xương ức gà - 20000

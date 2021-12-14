@@ -4,7 +4,6 @@ namespace ElementorPro\Core\App;
 use Elementor\Core\Base\App as BaseApp;
 use ElementorPro\Plugin;
 use ElementorPro\Core\App\Modules\SiteEditor\Module as SiteEditor;
-use ElementorPro\Core\App\Modules\KitLibrary\Module as KitLibrary;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
@@ -82,7 +81,6 @@ class App extends BaseApp {
 
 	public function __construct() {
 		$this->add_component( 'site-editor', new SiteEditor() );
-		$this->add_component( 'kit-library', new KitLibrary() );
 
 		add_action( 'elementor/app/init', [ $this, 'init' ] );
 

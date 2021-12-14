@@ -1,0 +1,8 @@
+2021-12-06T04:27:28+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($function) must be a valid callback, non-static method LoginPress_AJAX::optout_yes() cannot be called statically in E:\XAMPPP\htdocs\food\wp-includes\class-wp-hook.php:303
+Stack trace:
+#0 E:\XAMPPP\htdocs\food\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters('', Array)
+#1 E:\XAMPPP\htdocs\food\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#2 E:\XAMPPP\htdocs\food\wp-admin\admin-ajax.php(187): do_action('wp_ajax_loginpr...')
+#3 {main}
+  thrown in E:\XAMPPP\htdocs\food\wp-includes\class-wp-hook.php on line 303
+

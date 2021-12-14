@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.8.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-08-02 03:13:39+0000\n"
+"PO-Revision-Date: 2021-11-15 07:20:52+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -31,9 +31,21 @@ msgstr "0"
 msgid "Continue"
 msgstr "Tiếp tục"
 
+#: wp-admin/includes/theme.php:338
+msgid "Template Editing"
+msgstr "Chỉnh sửa template"
+
+#: wp-admin/about.php:133
+msgid "The Query Loop Block makes it possible to display posts based on specified parameters; like a PHP loop without the code. Easily display posts from a specific category, to do things like create a portfolio or a page full of your favorite recipes. Think of it as a more complex and powerful Latest Posts Block! Plus, pattern suggestions make it easier than ever to create a list of posts with the design you want."
+msgstr "Khối Vòng lặp Truy vấn giúp hiển thị các bài đăng dựa trên các tham số được chỉ định; giống như một vòng lặp PHP mà không cần viết code. Dễ dàng hiển thị các bài đăng từ một danh mục cụ thể, để thực hiện những việc như tạo danh sách dự án đã làm hoặc trang chứa đầy đủ các công thức nấu ăn yêu thích của bạn. Hãy coi nó như một Khối Bài viết Mới nhất phức tạp và mạnh mẽ hơn! Ngoài ra, các đề xuất về mẫu giúp việc tạo danh sách các bài viết với thiết kế bạn muốn dễ dàng hơn bao giờ hết."
+
 #: wp-admin/credits.php:61
 msgid "Want to see your name in lights on this page?"
 msgstr "Muốn thấy tên bạn trên trang này?"
+
+#: wp-admin/credits.php:55 wp-admin/credits.php:63
+msgid "Get involved in WordPress."
+msgstr "Đóng góp vào WordPress."
 
 #. translators: 1: https://wordpress.org/about
 #: wp-admin/credits.php:50
@@ -75,44 +87,60 @@ msgstr "WordPress 5.8 được tạo bởi một nhóm của những cá nhân t
 
 #. translators: %1$s: Link to 5.6's block dev notes. %2$s: Link to 5.7's block
 #. dev notes. %3$s: Link to 5.8's block dev notes.
-#: wp-admin/about.php:252
+#: wp-admin/about.php:277
 msgid "Expanding on previously implemented block supports in WordPress <a href=\"%1$s\">5.6</a> and <a href=\"%2$s\">5.7</a>, WordPress 5.8 introduces several new block support flags and new options to customize your registered blocks. More information is available in the <a href=\"%3$s\">block supports dev note</a>."
 msgstr "Mở rộng thêm hỗ trợ block trước đây có trong WordPress <a href=\"%1$s\">5.6</a> và<a href=\"%2$s\">5.7</a>, WordPress 5.8 giới thiệu thêm một vài chức năng block mới cùng những tùy chọn để tùy biến block đã tạo của bạn. Xem thêm thông tin tại <a href=\"%3$s\">nhật ký của nhóm phát triển</a>."
 
-#: wp-admin/about.php:246
+#: wp-admin/about.php:271
 msgid "Adding Additional Block Supports"
 msgstr "Thêm chức năng hỗ trợ cho Block"
 
-#: wp-admin/about.php:240
+#: wp-admin/about.php:265
 msgid "WebP is a modern image format that provides improved lossless and lossy compression for images on the web. WebP images are around 30% smaller on average than their JPEG or PNG equivalents, resulting in sites that are faster and use less bandwidth."
 msgstr "WebP là định dạng hình ảnh hiện đại hỗ trợ tối ưu về nén hình ảnh trên web. Ảnh của WebP có dung lượng trung bình nhỏ hơn 30% so với ảnh JPEG hoặc PNG, mang lại kết quả website nhanh và tốn ít băng thông hơn."
 
-#: wp-admin/about.php:236
+#: wp-admin/about.php:261
 msgid "Adding support for WebP"
 msgstr "Hỗ trợ định dạng ảnh WebP"
 
 #. translators: %s: Link to Browse Happy.
-#: wp-admin/about.php:228
+#: wp-admin/about.php:253
 msgid "Support for Internet Explorer 11 has been dropped as of this release. This means you may have issues managing your site that will not be fixed in the future. If you are currently using IE11, it is strongly recommended that you <a href=\"%s\">switch to a more modern browser</a>."
 msgstr "Ngừng hỗ trợ Internet Explorer 11 trong phiên bản này. Điều này có nghĩa là nếu có vấn đề xảy ra liên quan, nó sẽ không còn được khắc phục lỗi trong tương lai. Nếu bạn đang dùng IE11, hãy <a href=\"%s\">chuyển sang một trình duyệt tốt hơn</a>."
 
-#: wp-admin/about.php:222
+#: wp-admin/about.php:247
 msgid "Dropping support for Internet Explorer 11"
 msgstr "Ngừng hỗ trợ trình duyệt Internet Explorer 11"
 
-#: wp-admin/about.php:205
+#: wp-admin/about.php:230
 msgid "Theme.json"
 msgstr "Theme.json"
 
-#: wp-admin/about.php:192
+#: wp-admin/about.php:217
 msgid "For Developers to Explore"
 msgstr "Dành cho các nhà phát triển để khám phá"
 
-#: wp-admin/about.php:88
+#: wp-admin/about.php:203
+msgid "Style and Colorize Images"
+msgstr "Ảnh được chỉnh sửa và phối màu"
+
+#: wp-admin/about.php:184
+msgid "Suggested Patterns for Blocks"
+msgstr "Mẫu block được gợi ý"
+
+#: wp-admin/about.php:147
+msgid "Edit the Templates Around Posts"
+msgstr "Chỉnh sửa template ở bài viết"
+
+#: wp-admin/about.php:130
+msgid "Display Posts with New Blocks and Patterns"
+msgstr "Hiển thị các bài chứa block và mẫu mới"
+
+#: wp-admin/about.php:113
 msgid "Manage Widgets with Blocks"
 msgstr "Quản lý Widgets với Blocks"
 
-#: wp-admin/about.php:78
+#: wp-admin/about.php:103
 msgid "Three Essential Powerhouses"
 msgstr "Ba sức mạnh thiết yếu"
 
@@ -154,6 +182,19 @@ msgstr "Kiểm tra tình trạng trang web - %s"
 msgid "List of menu items selected for deletion:"
 msgstr "Danh sách các mục menu được chọn để xóa:"
 
+#: wp-admin/nav-menus.php:1036
+msgid "Remove Selected Items"
+msgstr "Xoá những mục đã chọn"
+
+#: wp-admin/nav-menus.php:999 wp-admin/nav-menus.php:1034
+msgid "Bulk Select"
+msgstr "Chọn hàng loạt"
+
+#. translators: %s: Item name.
+#: wp-admin/nav-menus.php:501
+msgid "Deleted menu item: %s."
+msgstr "Đã xoá mục %s khỏi menu."
+
 #. translators: %s: Item name.
 #: wp-admin/nav-menus.php:499
 msgid "item %s"
@@ -172,6 +213,18 @@ msgstr "Không thể mã hóa dữ liệu cá nhân để xuất. Lỗi: %s"
 #: wp-admin/includes/dashboard.php:1948
 msgid "Your site&#8217;s health is looking good, but there is still one thing you can do to improve its performance and security."
 msgstr "Tình trạng trang của bạn đang tốt lên, nhưng bạn vẫn còn một việc có thể làm để cải thiện hiệu suất và tính bảo mật của trang."
+
+#: wp-admin/includes/dashboard.php:1944
+msgid "Your site has a critical issue that should be addressed as soon as possible to improve its performance and security."
+msgstr "Trang web của bạn có vấn đề quan trọng cần được giải quyết càng sớm càng tốt để cải thiện hiệu suất và bảo mật của nó."
+
+#: wp-admin/includes/dashboard.php:1673
+msgid "Internet Explorer does not give you the best WordPress experience. Switch to Microsoft Edge, or another more modern browser to get the most from your site."
+msgstr "Internet Explorer không hỗ trợ tốt cho WordPress. Hãy chuyển sang Microsoft Edge hoặc một trình duyệt khác mới hơn để có một trải nghiệm tốt nhất khi dùng trang web của bạn."
+
+#: wp-admin/includes/class-wp-debug-data.php:616
+msgid "Unable to determine"
+msgstr "Không thể xác định"
 
 #: wp-admin/includes/class-wp-debug-data.php:615
 msgid "ImageMagick supported file formats"
@@ -345,6 +398,10 @@ msgstr "Công cụ này giúp chủ sở hữu trang web tuân thủ luật và 
 msgid "<a href=\"https://wordpress.org/support/article/tools-erase-personal-data-screen/\">Documentation on Erase Personal Data</a>"
 msgstr "<a href=\"https://wordpress.org/support/article/tools-erase-personal-data-screen/\">Tài liệu về xóa dữ liệu cá nhân</a>"
 
+#: wp-admin/erase-personal-data.php:55
+msgid "Plugin authors can <a href=\"https://developer.wordpress.org/plugins/privacy/adding-the-personal-data-eraser-to-your-plugin/\" target=\"_blank\">learn more about how to add support for the Personal Data Eraser to a plugin here</a>."
+msgstr "Tác giả plugin có thể <a href=\"https://developer.wordpress.org/plugins/privacy/adding-the-personal-data-eraser-to-your-plugin/\" target=\"_blank\">tìm hiểu thêm về cách hỗ trợ xóa dữ liệu cá nhân vào plugin tại đây</a>."
+
 #: wp-admin/erase-personal-data.php:54
 msgid "Many plugins may collect or store personal data either in the WordPress database or remotely. Any Erase Personal Data request should delete data from plugins as well."
 msgstr "Nhiều plugin có thể thu thập hoặc lưu trữ thông tin cá nhân trong cơ sở dữ liệu WordPress hoặc ở một hệ thống khác. Bất kỳ yêu cầu xóa dữ liệu cá nhân nào cũng nên cả việc xóa dữ liệu từ plugin."
@@ -352,6 +409,11 @@ msgstr "Nhiều plugin có thể thu thập hoặc lưu trữ thông tin cá nh�
 #: wp-admin/erase-personal-data.php:52 wp-admin/export-personal-data.php:52
 msgid "Plugin Data"
 msgstr "Dữ liệu của plugin"
+
+#. translators: %s: URL to Privacy Policy Guide screen.
+#: wp-admin/erase-personal-data.php:45
+msgid "If you are not sure, check the plugin documentation or contact the plugin author to see if the plugin collects data and if it supports the Data Eraser tool. This information may be available in the <a href=\"%s\">Privacy Policy Guide</a>."
+msgstr "Nếu bạn không chắc chắn, hãy kiểm tra tài liệu plugin hoặc liên hệ với tác giả plugin để xem liệu plugin có thu thập dữ liệu hay không và liệu plugin có hỗ trợ xoá dữ liệu hay không. Thông tin này có thể tìm thấy trong <a href=\"%s\">Hướng dẫn chính sách bảo mật</a>."
 
 #: wp-admin/erase-personal-data.php:39 wp-admin/export-personal-data.php:39
 msgid "<strong>Media</strong> &mdash; A list of URLs for all media file uploads made by the user."
@@ -376,6 +438,14 @@ msgstr "Dữ liệu cá nhân được WordPress thu thập và được xóa ho
 #: wp-admin/erase-personal-data.php:32 wp-admin/export-personal-data.php:32
 msgid "Default Data"
 msgstr "Dữ liệu mặc định"
+
+#: wp-admin/erase-personal-data.php:25
+msgid "<strong>Note: As this tool only gathers data from WordPress and participating plugins, you may need to do more to comply with erasure requests. You should also delete any data collected by or stored with any 3rd party services used by your business or site.</strong>"
+msgstr "<strong>Lưu ý: Vì công cụ này chỉ thu thập dữ liệu từ WordPress và các plugin tham gia, bạn có thể cần phải làm nhiều việc hơn để tuân thủ các yêu cầu xoá. Bạn cũng nên xoá bất kỳ dữ liệu nào được thu thập hoặc lưu trữ bằng bất kỳ dịch vụ bên thứ ba nào được doanh nghiệp hoặc trang web của bạn sử dụng.</strong>"
+
+#: wp-admin/erase-personal-data.php:23
+msgid "Deleting, anonymizing, or forgetting all data that a business or website has collected about an individual is a requirement of many Privacy Laws around the world, and is sometimes referred to as the \"Right To Be Forgotten\"."
+msgstr "Việc xoá, ẩn danh tính hoặc quên tất cả dữ liệu mà một doanh nghiệp hoặc trang web đã thu thập về một cá nhân là yêu cầu của nhiều Luật về quyền riêng tư trên khắp thế giới và đôi khi được gọi là \"Quyền được lãng quên\"."
 
 #: wp-admin/erase-personal-data.php:22
 msgid "This screen allows you to manage requests to erase or delete personal data."
@@ -575,7 +645,7 @@ msgstr "Thêm mật khẩu ứng dụng mới"
 msgid "Required to create an Application Password, but not to update the user."
 msgstr "Bắt buộc phải tạo Mật khẩu ứng dụng, nhưng không được cập nhật người dùng."
 
-#: wp-admin/about.php:284
+#: wp-admin/about.php:309
 msgid "Go to Updates"
 msgstr "Tới Cập nhật"
 
@@ -620,6 +690,10 @@ msgstr "Bạn sẽ được đưa trở lại Trang tổng quan WordPress và kh
 msgid "No, I do not approve of this connection."
 msgstr "Không, tôi không chấp nhận kết nối này."
 
+#: wp-admin/authorize-application.php:277
+msgid "You will be given a password to manually enter into the application in question."
+msgstr "Bạn sẽ được cung cấp một mật khẩu để nhập vào ứng dụng một cách thủ công khi được hỏi."
+
 #. translators: %s: The URL the user is being redirected to.
 #: wp-admin/authorize-application.php:264
 #: wp-admin/authorize-application.php:298
@@ -630,14 +704,46 @@ msgstr "Bạn sẽ được chuyển đến %s"
 msgid "Yes, I approve of this connection."
 msgstr "Có, tôi chấp nhận kết nối này."
 
+#. translators: 1: URL to my-sites.php, 2: Number of sites the user has.
+#: wp-admin/authorize-application.php:169
+msgid "This will grant access to <a href=\"%1$s\">the %2$s site in this installation that you have permissions on</a>."
+msgid_plural "This will grant access to <a href=\"%1$s\">all %2$s sites in this installation that you have permissions on</a>."
+msgstr[0] "Điều này sẽ cho phép truy cập <a href=\"%1$s\">%2$s trang web mà bạn có quyền truy cập vào</a>."
+
+#: wp-admin/authorize-application.php:156
+msgid "Would you like to give this application access to your account? You should only do this if you trust the app in question."
+msgstr "Bạn có muốn cấp quyền truy cập cho ứng dụng này vào tài khoản của bạn? Hãy chỉ cấp quyền nếu bạn tin tưởng ứng dụng này."
+
+#. translators: %s: Application name.
+#: wp-admin/authorize-application.php:150
+msgid "Would you like to give the application identifying itself as %s access to your account? You should only do this if you trust the app in question."
+msgstr "Bạn có muốn ứng dụng %s truy cập vào tài khoản của bạn? Hãy chỉ cấp quyền nếu bạn tin tưởng ứng dụng này."
+
+#: wp-admin/authorize-application.php:144
+msgid "An application would like to connect to your account."
+msgstr "Ứng dụng sẽ kết nối với tài khoản của bạn."
+
 #: wp-admin/authorize-application.php:87 wp-admin/authorize-application.php:94
 #: wp-admin/authorize-application.php:112
 msgid "Cannot Authorize Application"
 msgstr "Hủy cấp phép ứng dụng"
 
+#: wp-admin/authorize-application.php:86
+msgid "The Authorize Application request is not allowed."
+msgstr "Yêu cầu ứng dụng ủy quyền không được cho phép."
+
 #: wp-admin/authorize-application.php:65
 msgid "Authorize Application"
 msgstr "Ứng dụng được đăng ký"
+
+#: wp-admin/authorize-application.php:198 wp-admin/user-edit.php:902
+#: wp-admin/js/auth-app.js:98
+msgid "Be sure to save this in a safe location. You will not be able to retrieve it."
+msgstr "Hãy lưu lại một cách an toàn. Bạn sẽ không thể lấy lại nó lần nữa."
+
+#: wp-admin/authorize-application.php:227 wp-admin/user-edit.php:768
+msgid "WordPress App on My Phone"
+msgstr "Ứng dụng WordPress trên điện thoại"
 
 #: wp-admin/authorize-application.php:226 wp-admin/user-edit.php:767
 msgid "New Application Password Name"
@@ -690,6 +796,15 @@ msgstr "IP gần nhất"
 msgid "Last Used"
 msgstr "Sử dụng gần nhất"
 
+#. translators: 1: The Site Health action that is no longer used by core. 2:
+#. The new function that replaces it.
+#: wp-admin/includes/ajax-actions.php:5178
+#: wp-admin/includes/ajax-actions.php:5211
+#: wp-admin/includes/ajax-actions.php:5244
+#: wp-admin/includes/ajax-actions.php:5294
+msgid "The Site Health check for %1$s has been replaced with %2$s."
+msgstr "Công cụ Kiểm tra sức khỏe website %1$s đã được thay thế bởi %2$s."
+
 #: wp-admin/includes/class-wp-privacy-data-removal-requests-list-table.php:139
 msgid "Erase personal data"
 msgstr "Xóa dữ liệu cá nhân"
@@ -712,6 +827,10 @@ msgstr "Video đầu trang hiện tại"
 #: wp-admin/includes/class-wp-site-health.php:2362
 msgid "Authorization header"
 msgstr "Authorization header"
+
+#: wp-admin/includes/class-wp-site-health.php:2241
+msgid "Learn how to configure the Authorization header."
+msgstr "Tìm hiểu cách cấu hình Authorization header."
 
 #: wp-admin/includes/class-wp-site-health.php:2235
 msgid "Flush permalinks"
@@ -807,7 +926,7 @@ msgstr "Giá trị \"%1$s\" nhỏ hơn \"%2$s\"."
 msgid "Environment type"
 msgstr "Loại môi trường"
 
-#: wp-admin/about.php:266
+#: wp-admin/about.php:291
 msgid "Check the Field Guide for more!"
 msgstr "Kiểm tra mục Hướng dẫn để biết thêm!"
 
@@ -827,9 +946,33 @@ msgstr "Bản cập nhật này không tương thích với phiên bản WordPre
 msgid "This update doesn&#8217;t work with your versions of WordPress and PHP."
 msgstr "Bản cập nhật này không hoạt động với phiên bản WordPress và PHP hiện tại của bạn."
 
+#: wp-admin/options-discussion.php:207 wp-admin/options-discussion.php:208
+msgid "Disallowed Comment Keys"
+msgstr "Các kí tự bình luận không cho phép"
+
 #: wp-admin/includes/class-wp-site-health.php:2327
 msgid "Plugin and theme auto-updates"
 msgstr "Tự động cập nhật plugin và theme"
+
+#: wp-admin/includes/class-wp-site-health.php:2621
+msgid "There appear to be no issues with plugin and theme auto-updates."
+msgstr "Không có vấn đề gì với chức năng tự động cập nhật plugin và giao diện."
+
+#: wp-admin/includes/class-wp-site-health.php:2615
+msgid "Auto-updates for themes appear to be disabled. This will prevent your site from receiving new versions automatically when available."
+msgstr "Tự động cập nhật giao diện đã bị tắt. Điều này ngăn website của bạn nhận phiên bản cập nhật mới khi có sẵn."
+
+#: wp-admin/includes/class-wp-site-health.php:2610
+msgid "Auto-updates for plugins appear to be disabled. This will prevent your site from receiving new versions automatically when available."
+msgstr "Tự động cập nhật cho plugin đã bị tắt. Điều này ngăn website của bạn nhận phiên bản cập nhật mới khi có sẵn."
+
+#: wp-admin/includes/class-wp-site-health.php:2605
+msgid "Auto-updates for plugins and themes appear to be disabled. This will prevent your site from receiving new versions automatically when available."
+msgstr "Tự động cập nhật cho plugin và giao diện đã bị tắt. Điều này ngăn website của bạn nhận phiên bản cập nhật mới khi có sẵn."
+
+#: wp-admin/includes/class-wp-site-health.php:2596
+msgid "Auto-updates for plugins and/or themes appear to be disabled, but settings are still set to be displayed. This could cause auto-updates to not work as expected."
+msgstr "Tự động cập nhật cho plugin và/hoặc giao diện đã bị tắt, nhưng vẫn đang bật ở phần cài đặt. Điều này sẽ làm cho tính năng tự cập nhật không hoạt động như mong muốn."
 
 #: wp-admin/includes/class-wp-site-health.php:1870
 msgid "Your site may have problems auto-updating plugins and themes"
@@ -1279,6 +1422,11 @@ msgstr "Cập nhật tự động chưa được lên lịch. Có thể có sự
 msgid "You are updating a plugin. Be sure to <a href=\"%s\">back up your database and files</a> first."
 msgstr "Bạn đang cập nhật plugin. Hãy <a href=\"%s\">sao lưu toàn bộ dữ liệu của bạn</a> trước khi bắt đầu."
 
+#. translators: %s: Documentation URL.
+#: wp-admin/includes/class-plugin-installer-skin.php:295
+msgid "You are uploading an older version of a current plugin. You can continue to install the older version, but be sure to <a href=\"%s\">back up your database and files</a> first."
+msgstr "Bạn đang tải lên một phiên bản cũ của plugin hiện tại. Bạn có thể tiếp tục cài đặt phiên bản cũ này, nhưng hãy đảm bảo rằng bạn đã <a href=\"%s\">sao lưu cơ sở dữ liệu và file</a> trước khi bắt đầu."
+
 #. translators: 1: Current WordPress version, 2: Version required by the
 #. uploaded plugin.
 #: wp-admin/includes/class-plugin-installer-skin.php:280
@@ -1452,6 +1600,10 @@ msgstr "Không thể cài"
 #: wp-admin/includes/theme.php:334
 msgid "Full Site Editing"
 msgstr "Sửa toàn site"
+
+#: wp-admin/includes/theme.php:324
+msgid "Block Editor Patterns"
+msgstr "Mẫu công cụ soạn thảo block"
 
 #: wp-admin/includes/class-plugin-upgrader.php:98
 msgid "Plugin downgraded successfully."
@@ -3757,7 +3909,7 @@ msgstr "Không thể cài đặt"
 
 #. translators: %s: WordPress version
 #. translators: %s: WordPress version.
-#: wp-admin/about.php:65 wp-admin/includes/update.php:302
+#: wp-admin/about.php:65 wp-admin/about.php:90 wp-admin/includes/update.php:302
 #: wp-admin/install.php:238 wp-admin/update-core.php:92 wp-admin/upgrade.php:80
 msgid "https://wordpress.org/support/wordpress-version/version-%s/"
 msgstr "https://wordpress.org/support/wordpress-version/version-%s/"
@@ -3997,6 +4149,12 @@ msgstr "Không có trang nào cả."
 #: wp-admin/options-privacy.php:177
 msgid "After your Privacy Policy page is set, we suggest that you edit it."
 msgstr "Sau khi trang Chính sách Bảo mật của bạn được tạo, chúng tôi đề nghị bạn nên chỉnh sửa lại."
+
+#. translators: 1: Privacy Policy guide URL, 2: Additional link attributes, 3:
+#. Accessibility text.
+#: wp-admin/options-privacy.php:215
+msgid "Need help putting together your new Privacy Policy page? <a href=\"%1$s\" %2$s>Check out our Privacy Policy guide%3$s</a> for recommendations on what content to include, along with policies suggested by your plugins and theme."
+msgstr "Cần hỗ trợ để tạo trang Chính sách bảo mật mới? <a href=\"%1$s\" %2$s>Xem hướng dẫn Chính sách bảo mật của chúng tôi%3$s</a> để thấy các gợi ý nội dung nào cần cho vào, bên cạnh với các chính sách bởi plugin và giao diện bạn đang dùng."
 
 #: wp-admin/privacy-policy-guide.php:65 wp-admin/privacy-policy-guide.php:74
 msgid "Privacy Policy Guide"
@@ -6160,7 +6318,7 @@ msgid "(Currently set to: %s)"
 msgstr "(Hiện tại: %s)"
 
 #. translators: %s: WordPress version number.
-#: wp-admin/about.php:308
+#: wp-admin/about.php:333
 msgid "<strong>Version %s</strong> addressed one security issue."
 msgstr "<strong>Phiên bản %s</strong> đã giải quyết vấn đề bảo mật."
 
@@ -6172,15 +6330,15 @@ msgstr "https://en.gravatar.com/"
 msgid "Profile Picture"
 msgstr "Ảnh đại diện"
 
-#: wp-admin/about.php:45 wp-admin/about.php:305
+#: wp-admin/about.php:45 wp-admin/about.php:330
 msgid "Maintenance and Security Releases"
 msgstr "Các phiên bản bảo trì và bảo mật"
 
-#: wp-admin/about.php:302
+#: wp-admin/about.php:327
 msgid "Security Releases"
 msgstr "Các phiên bản bảo mật"
 
-#: wp-admin/about.php:299
+#: wp-admin/about.php:324
 msgid "Maintenance Releases"
 msgstr "Các phiên bản bảo trì"
 
@@ -7721,6 +7879,10 @@ msgstr "Đây là giao diện con của %s."
 #: wp-admin/themes.php:174
 msgid "When previewing on smaller monitors, you can use the collapse icon at the bottom of the left-hand pane. This will hide the pane, giving you more room to preview your site in the new theme. To bring the pane back, click on the collapse icon again."
 msgstr "Khi xem trước trên các màn hình nhỏ, bạn có thể sử dụng biểu tượng thu gọn ở dưới bảng tùy biến phía bên trái. Bấm vào biểu tượng này sẽ ẩn bảng tùy biến, cung cấp thêm khoảng trống để bạn xem trước trang mạng của bạn với giao diện mới. Để hiện lại bảng tùy biến, hãy bấm lần nữa vào biểu tượng thu gọn."
+
+#: wp-admin/themes.php:173
+msgid "The theme being previewed is fully interactive &mdash; navigate to different pages to see how the theme handles posts, archives, and other page templates. The settings may differ depending on what theme features the theme being previewed supports. To accept the new settings and activate the theme all in one step, click the Activate &amp; Publish button above the menu."
+msgstr "Giao diện đang xem thử có thể tương tác thỏa mái &mdash; xem các trang khác nhau để xem giao diện hỗ trợ bài viết, trang lưu trữ hay các trang khác. Cấu hình có thể khác nhau tùy theo từng giao diện. Để lưu cấu hình mới và kích hoạt giao diện trong một bước, ấn chuột vào nútKích hoạt &amp; Công bố bên trên menu."
 
 #: wp-admin/themes.php:172
 msgid "Tap or hover on any theme then click the Live Preview button to see a live preview of that theme and change theme options in a separate, full-screen view. You can also find a Live Preview button at the bottom of the theme details screen. Any installed theme can be previewed and customized in this way."
@@ -9606,13 +9768,13 @@ msgstr "Hiển thị thanh công cụ khi xem trang"
 
 #. translators: %s: HelpHub URL
 #. translators: %s: Documentation URL.
-#: wp-admin/about.php:62 wp-admin/about.php:331
+#: wp-admin/about.php:62 wp-admin/about.php:87 wp-admin/about.php:356
 msgid "For more information, see <a href=\"%s\">the release notes</a>."
 msgstr "Để biết thêm thông tin, xem <a href=\"%s\">thông báo phát hành</a>."
 
 #. translators: 1: WordPress version number, 2: Plural number of bugs. More
 #. than one security issue.
-#: wp-admin/about.php:325
+#: wp-admin/about.php:350
 msgid "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bugs."
 msgstr[0] "<strong>Phiên bản %1$s</strong> đã giải quyết một số vấn đề về bảo mật và sửa %2$s lỗi."
@@ -9620,13 +9782,13 @@ msgstr[0] "<strong>Phiên bản %1$s</strong> đã giải quyết một số v�
 #. translators: 1: WordPress version number, 2: plural number of bugs.
 #. translators: 1: WordPress version number, 2: Plural number of bugs. Singular
 #. security issue.
-#: wp-admin/about.php:50 wp-admin/about.php:319
+#: wp-admin/about.php:50 wp-admin/about.php:75 wp-admin/about.php:344
 msgid "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bugs."
 msgstr[0] "<strong>Phiên bản %1$s</strong> đã giải quyết một vấn đề về bảo mật và sửa %2$s lỗi."
 
 #. translators: 1: WordPress version number, 2: Plural number of bugs.
-#: wp-admin/about.php:313
+#: wp-admin/about.php:338
 msgid "<strong>Version %1$s</strong> addressed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed %2$s bugs."
 msgstr[0] "<strong>Phiên bản %1$s</strong> đã giải quyết %2$s lỗi."
@@ -9636,19 +9798,19 @@ msgid "Welcome to your WordPress Dashboard! This is the screen you will see when
 msgstr "Chào mừng đến với giao diện Quản trị của WordPress! Đây đơn giản là nơi bạn đăng nhập và truy cập vào các tính năng quản lý website của mình. Bạn có thể xem thêm thông tin trợ giúp bằng cách nhấp vào các mục Trợ giúp ở trên mỗi đầu trang."
 
 #. translators: %s: WordPress version number.
-#: wp-admin/about.php:310
+#: wp-admin/about.php:335
 msgid "<strong>Version %s</strong> addressed some security issues."
 msgstr "<strong>Phiên bản %1$s</strong> đã giải quyết một số vấn đề về bảo mật."
 
-#: wp-admin/about.php:304
+#: wp-admin/about.php:329
 msgid "Maintenance and Security Release"
 msgstr "Các bản Bảo Mật và Bảo Trì"
 
-#: wp-admin/about.php:301
+#: wp-admin/about.php:326
 msgid "Security Release"
 msgstr "Các bản Bảo Mật"
 
-#: wp-admin/about.php:298
+#: wp-admin/about.php:323
 msgid "Maintenance Release"
 msgstr "Các bản Bảo Trì"
 
@@ -9933,11 +10095,11 @@ msgstr "<strong>Biên Tập</strong> đưa bạn tới màn hình soạn thảo 
 msgid "Because this is a multisite installation, you may add accounts that already exist on the Network by specifying a username or email, and defining a role. For more options, such as specifying a password, you have to be a Network Administrator and use the hover link under an existing user&#8217;s name to Edit the user profile under Network Admin > All Users."
 msgstr "Do đây là một bản cài đặt đa mạng, bạn có thể thêm tài khoản đã tồn tại trong Mạng Lưới bằng cách chỉ định tên truy cập hoặc địa chỉ thư điện tử, và lựa chọn một vai trò người dùng. Để có thêm lựa chọn, như chỉ định mật khẩu, bạn phải là Quản Trị Viên Mạng Lưới và sử dụng liên kết hiển thị phía dưới tên người dùng khi di chuột lên để Biên Tập hồ sơ người dùng tại Quản Trị Mạng Lưới > Tất Cả Người Dùng."
 
-#: wp-admin/about.php:287
+#: wp-admin/about.php:312
 msgid "Go to Dashboard &rarr; Home"
 msgstr "Đến Bảng tin &rarr; Trang chủ"
 
-#: wp-admin/about.php:284
+#: wp-admin/about.php:309
 msgid "Go to Dashboard &rarr; Updates"
 msgstr "Tới Bảng tin &rarr; Cập nhật"
 
@@ -11745,7 +11907,7 @@ msgstr "Cập nhật WordPress"
 msgid "Edit menu item"
 msgstr "Sửa mục trong menu"
 
-#: wp-admin/about.php:287 wp-admin/includes/network.php:148
+#: wp-admin/about.php:312 wp-admin/includes/network.php:148
 msgid "Go to Dashboard"
 msgstr "Xem bảng tin"
 

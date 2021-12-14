@@ -27,7 +27,6 @@ final class Modules_Manager {
 			'usage',
 			'screenshots',
 			'compatibility-tag',
-			'license',
 
 			// Modules with Widgets.
 			'theme-builder',
@@ -37,7 +36,6 @@ final class Modules_Manager {
 			'slides',
 			'nav-menu',
 			'animated-headline',
-			'hotspot',
 			'pricing',
 			'flip-box',
 			'call-to-action',
@@ -56,7 +54,6 @@ final class Modules_Manager {
 			'lottie',
 			'code-highlight',
 			'custom-code',
-			'video-playlist',
 			'payments',
 		];
 

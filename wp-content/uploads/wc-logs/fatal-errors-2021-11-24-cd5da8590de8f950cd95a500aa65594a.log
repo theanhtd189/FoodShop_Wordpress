@@ -1,0 +1,44 @@
+2021-11-24T08:03:59+00:00 CRITICAL Uncaught Error: Failed opening required 'E:\XAMPPP\htdocs\food/wp-content/themes/flatsome/inc/classes/class-flatsome-default.php' (include_path='E:\XAMPPP\php\PEAR') in E:\XAMPPP\htdocs\food\wp-content\themes\flatsome\inc\init.php:20
+Stack trace:
+#0 E:\XAMPPP\htdocs\food\wp-content\themes\flatsome\functions.php(8): require()
+#1 E:\XAMPPP\htdocs\food\wp-settings.php(546): include('E:\\XAMPPP\\htdoc...')
+#2 E:\XAMPPP\htdocs\food\wp-config.php(95): require_once('E:\\XAMPPP\\htdoc...')
+#3 E:\XAMPPP\htdocs\food\wp-load.php(50): require_once('E:\\XAMPPP\\htdoc...')
+#4 E:\XAMPPP\htdocs\food\wp-admin\admin-ajax.php(22): require_once('E:\\XAMPPP\\htdoc...')
+#5 {main}
+  thrown in E:\XAMPPP\htdocs\food\wp-content\themes\flatsome\inc\init.php on line 20
+
+2021-11-24T08:30:02+00:00 CRITICAL Uncaught ArgumentCountError: 3 arguments are required, 2 given in E:\XAMPPP\htdocs\food\wp-admin\includes\class-bulk-upgrader-skin.php:152
+Stack trace:
+#0 E:\XAMPPP\htdocs\food\wp-admin\includes\class-bulk-upgrader-skin.php(152): sprintf('%1$s installed ...', 'Contact Form 7')
+#1 E:\XAMPPP\htdocs\food\wp-content\themes\flatsome\inc\classes\class-tgm-plugin-activation.php(3638): Bulk_Upgrader_Skin->after('Contact Form 7')
+#2 E:\XAMPPP\htdocs\food\wp-admin\includes\class-wp-upgrader.php(823): TGMPA_Bulk_Installer_Skin->after()
+#3 E:\XAMPPP\htdocs\food\wp-content\themes\flatsome\inc\classes\class-tgm-plugin-activation.php(3258): WP_Upgrader->run(Array)
+#4 E:\XAMPPP\htdocs\food\wp-content\themes\flatsome\inc\classes\class-tgm-plugin-activation.php(3371): TGMPA_Bulk_Installer->run(Array)
+#5 E:\XAMPPP\htdocs\food\wp-content\themes\flatsome\inc\classes\class-tgm-plugin-activation.php(2977): TGMPA_Bulk_Installer->bulk_install(Array)
+#6 E:\XAMPPP\htdocs\food\wp-content\themes\flatsome\inc\classes\class-tgm-plugin-activation.php(743): TGMPA_List_Table->process_bulk_actions()
+#7 E:\XAMPPP\htdocs\food\wp-includes\class-wp-hook.php(303): TGM_Plugin_Activation->install_plugins_page('')
+#8 E:\XAMPPP\htdocs\food\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters('', Array)
+#9 E:\XAMPPP\htdocs\food\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#10 E:\XAMPPP\htdocs\food\wp-admin\admin.php(259): do_action('appearance_page...')
+#11 E:\XAMPPP\htdocs\food\wp-admin\themes.php(10): require_once('E:\\XAMPPP\\htdoc...')
+#12 {main}
+  thrown in E:\XAMPPP\htdocs\food\wp-admin\includes\class-bulk-upgrader-skin.php on line 152
+
+2021-11-24T08:30:21+00:00 CRITICAL Uncaught ArgumentCountError: 3 arguments are required, 2 given in E:\XAMPPP\htdocs\food\wp-admin\includes\class-bulk-upgrader-skin.php:152
+Stack trace:
+#0 E:\XAMPPP\htdocs\food\wp-admin\includes\class-bulk-upgrader-skin.php(152): sprintf('%1$s installed ...', 'Nextend Social ...')
+#1 E:\XAMPPP\htdocs\food\wp-content\themes\flatsome\inc\classes\class-tgm-plugin-activation.php(3638): Bulk_Upgrader_Skin->after('Nextend Social ...')
+#2 E:\XAMPPP\htdocs\food\wp-admin\includes\class-wp-upgrader.php(823): TGMPA_Bulk_Installer_Skin->after()
+#3 E:\XAMPPP\htdocs\food\wp-content\themes\flatsome\inc\classes\class-tgm-plugin-activation.php(3258): WP_Upgrader->run(Array)
+#4 E:\XAMPPP\htdocs\food\wp-content\themes\flatsome\inc\classes\class-tgm-plugin-activation.php(3371): TGMPA_Bulk_Installer->run(Array)
+#5 E:\XAMPPP\htdocs\food\wp-content\themes\flatsome\inc\classes\class-tgm-plugin-activation.php(2977): TGMPA_Bulk_Installer->bulk_install(Array)
+#6 E:\XAMPPP\htdocs\food\wp-content\themes\flatsome\inc\classes\class-tgm-plugin-activation.php(743): TGMPA_List_Table->process_bulk_actions()
+#7 E:\XAMPPP\htdocs\food\wp-includes\class-wp-hook.php(303): TGM_Plugin_Activation->install_plugins_page('')
+#8 E:\XAMPPP\htdocs\food\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters('', Array)
+#9 E:\XAMPPP\htdocs\food\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#10 E:\XAMPPP\htdocs\food\wp-admin\admin.php(259): do_action('appearance_page...')
+#11 E:\XAMPPP\htdocs\food\wp-admin\themes.php(10): require_once('E:\\XAMPPP\\htdoc...')
+#12 {main}
+  thrown in E:\XAMPPP\htdocs\food\wp-admin\includes\class-bulk-upgrader-skin.php on line 152
+

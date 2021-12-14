@@ -1,7 +1,7 @@
 <?php
 namespace ElementorPro\Modules\Forms\Submissions\Database\Migrations;
 
-use Elementor\Core\Utils\Collection;
+use ElementorPro\Core\Utils\Collection;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.

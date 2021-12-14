@@ -1,4 +1,6 @@
 <?php
+define( 'WP_CACHE', true );
+
 /**
  * Cấu hình cơ bản cho WordPress
  *
@@ -29,7 +31,7 @@ define( 'DB_USER', 'root' );
 define( 'DB_PASSWORD', '' );
 
 /** Hostname của database */
-define( 'DB_HOST', 'localhost');
+define( 'DB_HOST', 'localhost' );
 
 /** Database charset sử dụng để tạo bảng database. */
 define( 'DB_CHARSET', 'utf8mb4' );
@@ -48,14 +50,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         'tg E!`Ip4Jr JiNO~Bt0HZ7F-:T;0)~L<a8t/e*)G$!XqxxhdpUSu=QjsZn.5GDT' );
-define( 'SECURE_AUTH_KEY',  '[YP8Ud2wpO{uSjIG]/inFs8:v354}VHc,|BSrx5 A&V<+W{?3dr)lDw(V0-[,!.f' );
-define( 'LOGGED_IN_KEY',    '?|;?+~VVct%;f|6!rQ1BXGh7os7W}aC>8dYft*hp>w.huJ{-J{)d7jYzb.@^gxcA' );
-define( 'NONCE_KEY',        '(9*k1RtQred8a#Dgp<!]3I5bI,7>//vG};P:V[Ko@yq]$jgBXL)CDYJu9@d1l,^.' );
-define( 'AUTH_SALT',        'EMu~Nz<<LPb5oYUf#51Q&J0Wt52Pg`CG8QBnEk.u+Tz6*{SWq@izP&xP>~XeL~!e' );
-define( 'SECURE_AUTH_SALT', '7/;8MpmMxC%!@`d*}L.Pkk[,vE}2GZJeNVjQnp-9xkkErt+$G#w8{b&4M#9NwBu#' );
-define( 'LOGGED_IN_SALT',   'RaXbw[1/1@])OYU}==rv!.E~tzUc%.2)C#,,Nir|P{6,+St>o|G}qirAFh{s[5LS' );
-define( 'NONCE_SALT',       'b)l-E$,1,=0y8iCz3K9L~P%8B]H2I^bK&#P]-$/fmGveDYwW[jNxSL:JIa)j=Nw#' );
+define( 'AUTH_KEY',         'xZ1-Q[8B JedK!72U%%-{#GL&,nWcjk1A$o:kN#0eSBZ6?=/_ddd]*[609d+^q_R' );
+define( 'SECURE_AUTH_KEY',  '!Xd5.]_/r=8|y3dC5aFf #R*m_,V]LMx/0g@b|K*=.b!%AkTBZS1d;~u^m:lo@?s' );
+define( 'LOGGED_IN_KEY',    '3~<j7tQJ^9`gHVi^b42/FG4eQIeY9H]&xPfI2;#NaD28R!xSl:Peq%`x|i6uTmh?' );
+define( 'NONCE_KEY',        '<k|zO%.[^k. )@p?Z|gpO,.`K}mOv2-{U=$XWbz(01I8R.Kwp+6dT)q7>dDpD!9w' );
+define( 'AUTH_SALT',        '|&yj48?(^vKPpgcdFbiW$LYvZw9m,REj?.b29Y48RE=LXbqUfCRUJ%hjr7#2>3|^' );
+define( 'SECURE_AUTH_SALT', ';}!gE{_W}EY;a-fcDwFw&7Zx=v9_UT92U5YmQ0OB)lfplOzH!V4[Se[ksGSj(CaO' );
+define( 'LOGGED_IN_SALT',   '82Qfk^qO36#,B-I|$6r7tuCEIiK[M(4DoDuu]9I+U!K5ss]Sp,[F_pq^WW?wMa%,' );
+define( 'NONCE_SALT',       'zZ<b-!RD2r.a#CE_|| H:0.?cOw6$P*9%xhL;f.d$aEKUa4AZ]y6*f2p-`FvA8D.' );
 
 /**#@-*/
 
@@ -77,8 +79,8 @@ $table_prefix = 'wp_';
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
-define('WP_DEBUG', true);
-define('WP_MEMORY_LIMIT', '256M');
+define('WP_DEBUG', false);
+
 /* Đó là tất cả thiết lập, ngưng sửa từ phần này trở xuống. Chúc bạn viết blog vui vẻ. */
 
 /** Đường dẫn tuyệt đối đến thư mục cài đặt WordPress. */

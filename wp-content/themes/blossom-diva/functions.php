@@ -1026,16 +1026,28 @@ function blossom_feminine_footer_bottom(){ ?>
         <div class="container">
             <?php
                 blossom_feminine_get_footer_copyright();
-                
-                esc_html_e( ' Blossom Diva | Developed By ', 'blossom-diva' );
-                echo '<a href="' . esc_url( 'https://blossomthemes.com/' ) .'" rel="nofollow" target="_blank">' . esc_html__( ' Blossom Themes', 'blossom-diva' ) . '</a>.';
-                
-                printf( esc_html__( ' Powered by %s', 'blossom-diva' ), '<a href="'. esc_url( __( 'https://wordpress.org/', 'blossom-diva' ) ) .'" target="_blank">WordPress</a>.' );
-                if ( function_exists( 'the_privacy_policy_link' ) ) {
-                    the_privacy_policy_link();
-                }
             ?>                    
         </div>
     </div>
     <?php
 }
+// add_action( 'woocommerce_after_add_to_cart_quantity', 'isures_likeshare_btn_func' );
+  
+// function isures_likeshare_btn_func() {
+  
+//    echo '<div class="isures-btn--like_wrap">';
+ 
+//    echo '<div class="fb-like" data-href="' . get_permalink() . '" data-width="" data-layout="button_count" data-action="like" data-size="small" data-share="true"></div>';
+  
+//    echo '</div>';
+// }
+// add_action( 'wp_footer', 'isures_likeshare_reg_script', 9999 );
+  
+// function isures_likeshare_reg_script() {
+  
+//    if ( is_product() ) {
+  
+//       echo '<div id="fb-root"></div><script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0"></script>';
+  
+//    }
+// }

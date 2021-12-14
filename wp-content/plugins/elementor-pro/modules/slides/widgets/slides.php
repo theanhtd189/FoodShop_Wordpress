@@ -3,7 +3,6 @@ namespace ElementorPro\Modules\Slides\Widgets;
 
 use Elementor\Controls_Manager;
 use Elementor\Core\Kits\Documents\Tabs\Global_Typography;
-use Elementor\Group_Control_Background;
 use Elementor\Group_Control_Text_Shadow;
 use Elementor\Group_Control_Typography;
 use Elementor\Repeater;
@@ -953,17 +952,13 @@ class Slides extends Base_Widget {
 			]
 		);
 
-		$this->add_group_control(
-			Group_Control_Background::get_type(),
+		$this->add_control(
+			'button_background_color',
 			[
-				'name' => 'button_background',
-				'types' => [ 'classic', 'gradient' ],
-				'exclude' => [ 'image' ],
-				'selector' => '{{WRAPPER}} .elementor-slide-button',
-				'fields_options' => [
-					'background' => [
-						'default' => 'classic',
-					],
+				'label' => __( 'Background Color', 'elementor-pro' ),
+				'type' => Controls_Manager::COLOR,
+				'selectors' => [
+					'{{WRAPPER}} .elementor-slide-button' => 'background-color: {{VALUE}};',
 				],
 			]
 		);
@@ -994,17 +989,13 @@ class Slides extends Base_Widget {
 			]
 		);
 
-		$this->add_group_control(
-			Group_Control_Background::get_type(),
+		$this->add_control(
+			'button_hover_background_color',
 			[
-				'name' => 'button_hover_background',
-				'types' => [ 'classic', 'gradient' ],
-				'exclude' => [ 'image' ],
-				'selector' => '{{WRAPPER}} .elementor-slide-button:hover',
-				'fields_options' => [
-					'background' => [
-						'default' => 'classic',
-					],
+				'label' => __( 'Background Color', 'elementor-pro' ),
+				'type' => Controls_Manager::COLOR,
+				'selectors' => [
+					'{{WRAPPER}} .elementor-slide-button:hover' => 'background-color: {{VALUE}};',
 				],
 			]
 		);

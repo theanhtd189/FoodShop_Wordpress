@@ -40,10 +40,6 @@ class Document extends Theme_Section_Document {
 		return __( 'Popup', 'elementor-pro' );
 	}
 
-	public static function get_plural_title() {
-		return __( 'Popups', 'elementor-pro' );
-	}
-
 	public function get_display_settings() {
 		if ( ! $this->display_settings ) {
 			$settings = $this->get_display_settings_data();

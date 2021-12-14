@@ -241,7 +241,7 @@ class Media_Carousel extends Base {
 
 	protected function get_image_link_to( $slide ) {
 		if ( ! empty( $slide['video']['url'] ) ) {
-			return $slide['image']['url'] ? $slide['image']['url'] : '#';
+			return $slide['image']['url'];
 		}
 
 		if ( ! $slide['image_link_to_type'] ) {
@@ -484,7 +484,7 @@ class Media_Carousel extends Base {
 				'default' => 'search-plus',
 				'options' => [
 					'search-plus' => [
-						'icon' => 'eicon-search-bold',
+						'icon' => 'eicon-search-plus',
 					],
 					'plus-circle' => [
 						'icon' => 'eicon-plus-circle',
@@ -755,9 +755,5 @@ class Media_Carousel extends Base {
 				],
 			]
 		);
-	}
-
-	public function get_group_name() {
-		return 'carousel';
 	}
 }

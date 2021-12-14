@@ -155,8 +155,4 @@ class Facebook_Page extends Base_Widget {
 	}
 
 	public function render_plain_content() {}
-
-	public function get_group_name() {
-		return 'social';
-	}
 }

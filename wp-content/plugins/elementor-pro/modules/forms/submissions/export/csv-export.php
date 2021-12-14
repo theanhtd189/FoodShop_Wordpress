@@ -2,7 +2,7 @@
 namespace ElementorPro\Modules\Forms\Submissions\Export;
 
 use Elementor\Core\Base\Base_Object;
-use Elementor\Core\Utils\Collection;
+use ElementorPro\Core\Utils\Collection;
 use ElementorPro\Modules\Forms\Submissions\Database\Entities\Form_Snapshot;
 use ElementorPro\Modules\Forms\Submissions\Database\Query;
 use ElementorPro\Modules\Forms\Submissions\Database\Repositories\Form_Snapshot_Repository;
@@ -99,8 +99,7 @@ class CSV_Export extends Base_Object {
 		$headers = $this->values_keys
 			->map_with_keys( function ( $key ) use ( $labels_dictionary ) {
 				return [
-					// JSON_UNESCAPED_UNICODE - for supporting non english chars.
-					$key => wp_json_encode( isset( $labels_dictionary[ $key ] ) ? $labels_dictionary[ $key ] : $key, JSON_UNESCAPED_UNICODE ),
+					$key => wp_json_encode( isset( $labels_dictionary[ $key ] ) ? $labels_dictionary[ $key ] : $key ),
 				];
 			} )
 			->merge( $base_headers )
@@ -123,11 +122,9 @@ class CSV_Export extends Base_Object {
 				'2_id' => wp_json_encode( $submission['id'] ),
 				'3_created_at' => wp_json_encode( $submission['created_at'] ),
 				'4_user_id' => wp_json_encode( $submission['user_id'] ),
-				// JSON_UNESCAPED_SLASHES - Should not escape the user agent e.g: 'Mozilla/5.0 ...'
-				'5_user_agent' => wp_json_encode( $submission['user_agent'], JSON_UNESCAPED_SLASHES ),
+				'5_user_agent' => wp_json_encode( $submission['user_agent'] ),
 				'6_user_ip' => wp_json_encode( $submission['user_ip'] ),
-				// JSON_UNESCAPED_SLASHES - should not escape the url slashes e.g: 'https://local.test/'
-				'7_referrer' => wp_json_encode( $submission['referer'], JSON_UNESCAPED_SLASHES ),
+				'7_referrer' => wp_json_encode( $submission['referer'] ),
 			];
 
 			$values_dictionary = $this->get_values_dictionary( $submission['values'] );
@@ -135,8 +132,7 @@ class CSV_Export extends Base_Object {
 			$row = $this->values_keys
 				->map_with_keys( function ( $key ) use ( $values_dictionary ) {
 					return [
-						// JSON_UNESCAPED_UNICODE - for supporting non english chars.
-						$key => wp_json_encode( isset( $values_dictionary[ $key ] ) ? $values_dictionary[ $key ] : '', JSON_UNESCAPED_UNICODE ),
+						$key => wp_json_encode( isset( $values_dictionary[ $key ] ) ? $values_dictionary[ $key ] : '' ),
 					];
 				} )
 				->merge( $base_values )

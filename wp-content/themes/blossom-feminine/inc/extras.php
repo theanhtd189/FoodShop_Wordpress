@@ -21,7 +21,7 @@ function blossom_feminine_posted_on() {
     if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
         if( $ed_updated_post_date ){
             $time_string = '<time class="entry-date published updated" datetime="%3$s" itemprop="dateModified">%4$s</time><time class="updated" datetime="%1$s" itemprop="datePublished">%2$s</time>';
-            $on = __( 'updated on ', 'blossom-feminine' );        
+            $on = __( 'Cập nhật lúc ', 'blossom-feminine' );        
         }else{
             $time_string = '<time class="entry-date published" datetime="%1$s" itemprop="datePublished">%2$s</time><time class="updated" datetime="%3$s" itemprop="dateModified">%4$s</time>';  
         }        
@@ -55,7 +55,7 @@ function blossom_feminine_posted_by() {
 
     $byline = sprintf(
 		/* translators: %s: post author. */
-		esc_html_x( 'by %s', 'post author', 'blossom-feminine' ),
+		esc_html_x( 'Đăng bởi %s', 'post author', 'blossom-feminine' ),
 		'<span class="author vcard" itemprop="name"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 	);
 	echo '<span class="byline" itemprop="author" itemscope itemtype="https://schema.org/Person"> ' . $byline . '</span>'; // WPCS: XSS OK.
@@ -74,7 +74,7 @@ function blossom_feminine_comment_count() {
 			sprintf(
 				wp_kses(
 					/* translators: %s: post title */
-					__( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'blossom-feminine' ),
+					__( 'Bình luận<span class="screen-reader-text"> on %s</span>', 'blossom-feminine' ),
 					array(
 						'span' => array(
 							'class' => array(),
@@ -231,7 +231,7 @@ if( ! function_exists( 'blossom_feminine_primary_menu_fallback' ) ) :
 function blossom_feminine_primary_menu_fallback(){
     if( current_user_can( 'manage_options' ) ){
         echo '<ul id="primary-menu" class="menu">';
-        echo '<li><a href="' . esc_url( admin_url( 'nav-menus.php' ) ) . '">' . esc_html__( 'Click here to add a menu', 'blossom-feminine' ) . '</a></li>';
+        echo '<li><a href="' . esc_url( admin_url( 'nav-menus.php' ) ) . '">' . esc_html__( 'Thêm menu mới', 'blossom-feminine' ) . '</a></li>';
         echo '</ul>';
     }
 }
@@ -244,7 +244,7 @@ if( ! function_exists( 'blossom_feminine_secondary_menu_fallback' ) ) :
 function blossom_feminine_secondary_menu_fallback(){
     if( current_user_can( 'manage_options' ) ){
         echo '<ul id="secondary-menu" class="menu">';
-        echo '<li><a href="' . esc_url( admin_url( 'nav-menus.php' ) ) . '">' . esc_html__( 'Click here to add a menu', 'blossom-feminine' ) . '</a></li>';
+        echo '<li><a href="' . esc_url( admin_url( 'nav-menus.php' ) ) . '">' . esc_html__( 'Thêm menu mới', 'blossom-feminine' ) . '</a></li>';
         echo '</ul>';
     }
 }
@@ -286,9 +286,9 @@ function blossom_feminine_theme_comment( $comment, $args, $depth ){
                 	<?php endif; ?>
                     <?php printf( __( '<b class="fn" itemprop="creator" itemscope itemtype="https://schema.org/Person">%s</b> <span class="says">says:</span>', 'blossom-feminine' ), get_comment_author_link() ); ?>
                 	<div class="comment-metadata commentmetadata">
-                        <?php esc_html_e( 'Posted on', 'blossom-feminine' );?>
+                        <?php esc_html_e( '', 'blossom-feminine' );?>
                         <a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ); ?>">
-                    		<time itemprop="commentTime" datetime="<?php echo esc_attr( get_gmt_from_date( get_comment_date() . get_comment_time(), 'Y-m-d H:i:s' ) ); ?>"><?php printf( esc_html__( '%1$s at %2$s', 'blossom-feminine' ), get_comment_date(),  get_comment_time() ); ?></time>
+                    		<time itemprop="commentTime" datetime="<?php echo esc_attr( get_gmt_from_date( get_comment_date() . get_comment_time(), 'Y-m-d H:i:s' ) ); ?>"><?php printf( esc_html__( '%1$s vào lúc %2$s', 'blossom-feminine' ), get_comment_date(),  get_comment_time() ); ?></time>
                         </a>
                 	</div>
                 </div>

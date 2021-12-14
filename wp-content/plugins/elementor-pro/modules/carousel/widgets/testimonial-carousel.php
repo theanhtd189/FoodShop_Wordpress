@@ -642,8 +642,4 @@ class Testimonial_Carousel extends Base {
 	protected function render() {
 		$this->print_slider();
 	}
-
-	public function get_group_name() {
-		return 'carousel';
-	}
 }

@@ -244,10 +244,10 @@ function blossom_feminine_page_header(){ ?>
             echo '</h1>';
         }		
 
-        if( is_archive() ){
-            the_archive_title( '<h1 class="page-title">', '</h1>' );
-            the_archive_description( '<div class="archive-description">', '</div>' );
-        }
+        // if( is_archive() ){
+        //     the_archive_title( '<h1 class="page-title">', '</h1>' );
+        //     the_archive_description( '<div class="archive-description">', '</div>' );
+        // }
     
         if( is_search() ){ 
             global $wp_query;
@@ -278,7 +278,7 @@ function blossom_feminine_breadcrumb(){
     $post_page  = get_option( 'page_for_posts' ); //The ID of the page that displays posts.
     $show_front = get_option( 'show_on_front' ); //What to show on the front page    
     $home       = get_theme_mod( 'home_text', __( 'Home', 'blossom-feminine' ) ); // text for the 'Home' link
-    $delimiter  = get_theme_mod( 'separator', __( '/', 'blossom-feminine' ) ); // delimiter between crumbs
+    $delimiter  = get_theme_mod( 'separator', __( ' / ', 'blossom-feminine' ) ); // delimiter between crumbs
     $before     = '<span class="current" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">'; // tag before the current crumb
     $after      = '</span>'; // tag after the current crumb
     
@@ -853,7 +853,7 @@ function blossom_feminine_navigation(){
     if( is_single() ){ 
        $previous = get_previous_post_link(
     		'<div class="nav-previous nav-holder">%link</div>',
-    		'<span class="meta-nav">' . esc_html__( 'Previous Article', 'blossom-feminine' ) . '</span><span class="post-title">%title</span>',
+    		'<span class="meta-nav">' . esc_html__( 'Bài viết trước', 'blossom-feminine' ) . '</span><span class="post-title">%title</span>',
     		false,
     		'',
     		'category'
@@ -898,7 +898,7 @@ if( ! function_exists( 'blossom_feminine_related_posts' ) ) :
 function blossom_feminine_related_posts(){ 
     global $post;
     $ed_related_post = get_theme_mod( 'ed_related', true );
-    $related_title   = get_theme_mod( 'related_post_title', __( 'You may also like...', 'blossom-feminine' ) );
+    $related_title   = get_theme_mod( 'related_post_title', __( 'Có thể bạn thích...', 'blossom-feminine' ) );
     if( $ed_related_post ){
         $args = array(
             'post_type'             => 'post',
@@ -1083,13 +1083,10 @@ function blossom_feminine_footer_bottom(){ ?>
 		<div class="container">
 			<?php
                 blossom_feminine_get_footer_copyright();
-                esc_html_e( 'Blossom Feminine | Developed By ', 'blossom-feminine' );
-                echo '<a href="' . esc_url( 'https://blossomthemes.com/' ) .'" rel="nofollow" target="_blank">' . esc_html__( 'Blossom Themes', 'blossom-feminine' ) . '</a>.';
+                //esc_html_e( 'Blossom Feminine | Developed By ', 'blossom-feminine' );
                 
-                printf( esc_html__( ' Powered by %s', 'blossom-feminine' ), '<a href="'. esc_url( __( 'https://wordpress.org/', 'blossom-feminine' ) ) .'" target="_blank">WordPress</a>.' );
-                if ( function_exists( 'the_privacy_policy_link' ) ) {
-                    the_privacy_policy_link();
-                }
+                
+                
             ?>                    
 		</div>
 	</div>

@@ -56,7 +56,6 @@ class Module extends Module_Base {
 				'separator' => 'before',
 				'render_type' => 'none',
 				'frontend_available' => true,
-				'assets' => $this->get_asset_conditions_data(),
 			]
 		);
 
@@ -152,25 +151,6 @@ class Module extends Module_Base {
 				'type' => Controls_Manager::DIVIDER,
 			]
 		);
-	}
-
-	private function get_asset_conditions_data() {
-		return [
-			'scripts' => [
-				[
-					'name' => 'e-sticky',
-					'conditions' => [
-						'terms' => [
-							[
-								'name' => 'sticky',
-								'operator' => '!==',
-								'value' => '',
-							],
-						],
-					],
-				],
-			],
-		];
 	}
 
 	private function add_actions() {

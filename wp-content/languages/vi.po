@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.8.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-09-22 14:07:50+0000\n"
+"PO-Revision-Date: 2021-11-15 07:03:33+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -158,6 +158,11 @@ msgstr "Xám đậm"
 
 #: wp-includes/theme.json
 msgctxt "Gradient name"
+msgid "Midnight"
+msgstr "Nửa đêm"
+
+#: wp-includes/theme.json
+msgctxt "Gradient name"
 msgid "Electric grass"
 msgstr "Cỏ nhám"
 
@@ -260,6 +265,11 @@ msgstr "Hồng nhạt"
 msgctxt "Color name"
 msgid "White"
 msgstr "Trắng"
+
+#: wp-includes/theme.json
+msgctxt "Color name"
+msgid "Cyan bluish gray"
+msgstr "Cyan bluish gray"
 
 #: wp-includes/theme.json
 msgctxt "Color name"
@@ -561,6 +571,11 @@ msgid "Query Title"
 msgstr "Tiêu đề truy vấn"
 
 #: wp-includes/blocks/query-pagination/block.json
+msgctxt "block description"
+msgid "Displays a paginated navigation to next/previous set of posts, when applicable."
+msgstr "Hiển thị phần liên kết để xem bài tiếp theo / xem bài trước trên nhóm bài, nếu có."
+
+#: wp-includes/blocks/query-pagination/block.json
 msgctxt "block title"
 msgid "Query Pagination"
 msgstr "Phân trang truy vấn"
@@ -599,6 +614,21 @@ msgstr "Trang tiếp theo"
 msgctxt "block style label"
 msgid "Solid color"
 msgstr "Màu đơn"
+
+#: wp-includes/blocks/pullquote/block.json
+msgctxt "block description"
+msgid "Give special visual emphasis to a quote from your text."
+msgstr "Tạo điểm nhấn đặc biệt cho một trích dẫn từ văn bản của bạn."
+
+#: wp-includes/blocks/preformatted/block.json
+msgctxt "block description"
+msgid "Add text that respects your spacing and tabs, and also allows styling."
+msgstr "Thêm văn bản giữ nguyên khoảng cách và tab, đồng thời cũng cho phép tạo định dạng."
+
+#: wp-includes/blocks/post-title/block.json
+msgctxt "block description"
+msgid "Displays the title of a post, page, or any other content-type."
+msgstr "Hiển thị tiêu đề của bài viết, trang hoặc bất kỳ post type nào."
 
 #: wp-includes/blocks/post-title/block.json
 msgctxt "block title"
@@ -678,7 +708,7 @@ msgstr "Bắt đầu với block kể thành câu chuyện nào đó."
 #: wp-includes/blocks/page-list/block.json
 msgctxt "block keyword"
 msgid "navigation"
-msgstr "điều hướng"
+msgstr "menu"
 
 #: wp-includes/blocks/page-list/block.json
 msgctxt "block keyword"
@@ -912,7 +942,7 @@ msgstr "Hiển thị nhiều ảnh dạng thư viện."
 #: wp-includes/blocks/freeform/block.json
 msgctxt "block description"
 msgid "Use the classic WordPress editor."
-msgstr "Sử dụng trình soạn thảo cơ bản trước đây của WordPress."
+msgstr "Sử dụng công cụ soạn thảo cơ bản trước đây của WordPress."
 
 #: wp-includes/blocks/file/block.json
 msgctxt "block keyword"
@@ -1140,9 +1170,25 @@ msgstr "Mã được mã hóa của trạng thái thiết lập."
 msgid "Base64 encoded representation of the instance settings."
 msgstr "Mã hóa base64 của thiết lập trạng thái."
 
+#: wp-includes/rest-api/endpoints/class-wp-rest-widgets-controller.php:768
+msgid "Instance settings of the widget, if supported."
+msgstr "Trạng thái cấu hình của widget, nếu được hỗ trợ."
+
+#: wp-includes/rest-api/endpoints/class-wp-rest-widgets-controller.php:762
+msgid "HTML representation of the widget admin form."
+msgstr "Hiển thị HTML của form widget admin."
+
+#: wp-includes/rest-api/endpoints/class-wp-rest-widgets-controller.php:756
+msgid "HTML representation of the widget."
+msgstr "Nội dung HTML của widget."
+
 #: wp-includes/rest-api/endpoints/class-wp-rest-widgets-controller.php:749
 msgid "The sidebar the widget belongs to."
 msgstr "Thanh bên chứa widget."
+
+#: wp-includes/rest-api/endpoints/class-wp-rest-widgets-controller.php:744
+msgid "The type of the widget. Corresponds to ID in widget-types endpoint."
+msgstr "Loại widget. Tương ứng với ID trong endpoint loại widget."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-widgets-controller.php:739
 msgid "Unique identifier for the widget."
@@ -1319,6 +1365,14 @@ msgstr "Nội dung HTML để thêm vào tiêu đề cột bên khi hiển thị
 msgid "HTML content to prepend to the sidebar title when displayed. Default is an opening h2 element."
 msgstr "Nội dung HTML để thêm vào tiêu đề cột bên khi hiển thị. Mặc định là thẻ mở Tiêu đề H2."
 
+#: wp-includes/rest-api/endpoints/class-wp-rest-sidebars-controller.php:412
+msgid "HTML content to append to each widget's HTML output when assigned to this sidebar. Default is a closing list item element."
+msgstr "Nội dung HTML để thêm vào đầu ra HTML của mỗi tiện ích con khi được gán cho sidebar này. Mặc định là một phần tử danh sách đóng."
+
+#: wp-includes/rest-api/endpoints/class-wp-rest-sidebars-controller.php:405
+msgid "HTML content to prepend to each widget's HTML output when assigned to this sidebar. Default is an opening list item element."
+msgstr "Nội dung HTML để thêm trước vào đầu ra HTML của mỗi widget khi được chỉ định cho sidebar này. Mặc định là một phần tử danh sách mở."
+
 #: wp-includes/rest-api/endpoints/class-wp-rest-sidebars-controller.php:399
 msgid "Extra CSS class to assign to the sidebar in the Widgets interface."
 msgstr "CSS class bổ sung cho cột bên trong giao diện widget."
@@ -1355,16 +1409,24 @@ msgstr "Id của cột bên đã đăng ký"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:678
 msgid "The ID for the author of the revision."
-msgstr "ID tác giả của bản lưu."
+msgstr "ID tác giả của bản thảo."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:102
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:700
 msgid "Unique identifier for the revision."
-msgstr "Tên riêng của bản lưu."
+msgstr "Tên riêng của bản thảo."
+
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:3059
+msgid "Whether items must be assigned all or any of the specified terms."
+msgstr "Cho dù các mục đều được gán hoặc bất kỳ mục cụ thể nào."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2783
 msgid "Sort collection by post attribute."
 msgstr "Sắp xếp bộ sưu tập theo thuộc tính của bài viết."
+
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2449
+msgid "The order of the post in relation to other posts."
+msgstr "Thứ tự của bài viết tính theo sự liên quan với các bài viết khác."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2325
 msgid "The title for the post."
@@ -1391,6 +1453,10 @@ msgstr "Giới hạn kết quả phù hợp trong ID từ khoá."
 msgid "Limit results to those matching a category ID."
 msgstr "Giới hạn kết quả phù hợp trong một ID danh mục."
 
+#: wp-includes/rest-api/endpoints/class-wp-rest-pattern-directory-controller.php:296
+msgid "The preferred width of the viewport when previewing a pattern, in pixels."
+msgstr "Chiều rộng ưu tiên của khung hình  khi xem trước một mẫu, tính bằng pixel."
+
 #: wp-includes/rest-api/endpoints/class-wp-rest-pattern-directory-controller.php:289
 msgid "A description of the pattern."
 msgstr "Giới thiệu ngắn về mẫu."
@@ -1399,13 +1465,25 @@ msgstr "Giới thiệu ngắn về mẫu."
 msgid "The pattern's keyword slugs."
 msgstr "Từ khóa gợi ý của mẫu."
 
+#: wp-includes/rest-api/endpoints/class-wp-rest-pattern-directory-controller.php:273
+msgid "The pattern's category slugs."
+msgstr "Cấu trúc đường dẫn danh mục."
+
 #: wp-includes/rest-api/endpoints/class-wp-rest-pattern-directory-controller.php:266
 msgid "The pattern content."
 msgstr "Nội dung mẫu."
 
+#: wp-includes/rest-api/endpoints/class-wp-rest-pattern-directory-controller.php:259
+msgid "The pattern title, in human readable format."
+msgstr "Cấu trúc tiêu đề, ở định dạng cho người dùng đọc."
+
 #: wp-includes/rest-api/endpoints/class-wp-rest-pattern-directory-controller.php:252
 msgid "The pattern ID."
 msgstr "ID của mẫu."
+
+#: wp-includes/rest-api/endpoints/class-wp-rest-pattern-directory-controller.php:74
+msgid "Sorry, you are not allowed to browse the local block pattern directory."
+msgstr "Xin lỗi, bạn không được phép duyệt thư mục block pattern có sẵn."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:1614
 msgid "Sort collection by comment attribute."
@@ -1503,6 +1581,34 @@ msgstr "Lọc danh sách template"
 #: wp-includes/post.php:327
 msgid "Uploaded to this template"
 msgstr "Đã tải lên sang template này"
+
+#: wp-includes/post.php:326
+msgid "Insert into template"
+msgstr "Chèn vào template"
+
+#: wp-includes/post.php:325
+msgid "Template archives"
+msgstr "Danh sách template"
+
+#: wp-includes/post.php:324
+msgid "No templates found in Trash."
+msgstr "Không có template nào trong Thùng rác."
+
+#: wp-includes/post.php:323
+msgid "No templates found."
+msgstr "Không có template nào được tìm thấy."
+
+#: wp-includes/post.php:322
+msgid "Parent Template:"
+msgstr "Template cha:"
+
+#: wp-includes/post.php:321
+msgid "Search Templates"
+msgstr "Tìm kiếm mẫu"
+
+#: wp-includes/post.php:320
+msgid "All Templates"
+msgstr "Tất cả template:"
 
 #: wp-includes/post.php:319
 msgid "View Template"
@@ -3938,7 +4044,7 @@ msgstr "Các bài viết của trạng thái này có thể có thời gian côn
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:413
 msgid "Sorry, you are not allowed to delete revisions of this post."
-msgstr "Xin lỗi, bạn không được phép xóa các lần sửa đổi của bài viết này."
+msgstr "Xin lỗi, bạn không được phép xóa các bản thảo của bài viết này."
 
 #. translators: %s: Custom field key.
 #: wp-includes/rest-api/fields/class-wp-rest-meta-fields.php:330
@@ -4861,7 +4967,7 @@ msgstr "Liên kết xem trước bài viết."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-autosaves-controller.php:269
 msgid "There is no autosave revision for this post."
-msgstr "Bài viết này chưa có bản lưu tự động nào."
+msgstr "Bài viết này chưa có bản thảo tự động lưu nào."
 
 #: wp-includes/post.php:1819 wp-admin/edit-form-advanced.php:197
 #: wp-admin/edit-form-advanced.php:200
@@ -4943,7 +5049,7 @@ msgstr "Không có lưu trữ nào để hiển thị."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:306
 msgid "The offset number requested is larger than or equal to the number of available revisions."
-msgstr "Yêu cầu số lớn hơn hoặc bằng số bản khôi phục hiện tại."
+msgstr "Số yêu cầu lớn hơn hoặc bằng số bản thảo hiện có."
 
 #: wp-includes/user.php:4369
 msgid "Unable to send personal data export confirmation email."
@@ -6846,7 +6952,7 @@ msgstr "ID phải bắt đầu bằng một chữ cái, chỉ theo sau bởi cá
 
 #: wp-includes/class-wp-customize-widgets.php:806
 msgid "You can navigate to other pages on your site while using the Customizer to view and edit the widgets displayed on those pages."
-msgstr "Bạn có thể điều hướng đến các trang khác trên trang web của mình trong khi sử dụng Công cụ tuỳ chỉnh để xem và chỉnh sửa các widget được hiển thị trên các trang đó."
+msgstr "Bạn có thể liên kết đến các trang khác trên trang web của mình trong khi sử dụng Tùy chỉnh để xem và chỉnh sửa các widget được hiển thị trên các trang đó."
 
 #. translators: %s: The total number of widget areas registered.
 #: wp-includes/class-wp-customize-widgets.php:782
@@ -6889,7 +6995,7 @@ msgstr "Chữ và số xác nhận để phân loại"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:122
 msgid "Required to be true, as revisions do not support trashing."
-msgstr "Yêu cầu phải đúng, các bản duyệt lại không thể bị xóa"
+msgstr "Yêu cầu bắt buộc phải đúng vì bản thảo không hỗ trợ bỏ thùng rác."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-post-types-controller.php:332
 msgid "REST base route for the post type."
@@ -7211,7 +7317,7 @@ msgstr "Rất tiếc, bạn không được phép xóa bình luận này."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:175
 msgid "Sorry, you are not allowed to view revisions of this post."
-msgstr "Rất tiếc, bạn không được phép xem những lần sửa đổi của bài viết này."
+msgstr "Rất tiếc, bạn không được phép xem bản thảo của bài viết này."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:525
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:533
@@ -7500,7 +7606,7 @@ msgstr "Terms do not support trashing. Set '%s' to delete."
 #. translators: %s: force=true
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:460
 msgid "Revisions do not support trashing. Set '%s' to delete."
-msgstr "Revisions do not support trashing. Set '%s' to delete."
+msgstr "Bản thảo không hỗ trợ xóa. Bật '%s' để xóa."
 
 #. translators: %s: force=true
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:993
@@ -7660,7 +7766,7 @@ msgstr "Xin lỗi, bạn không có quyền để chỉnh sửa quyền hạn c�
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:431
 msgid "Sorry, you are not allowed to delete this revision."
-msgstr "Xin lỗi, bạn không được cấp quyền để xóa phần này."
+msgstr "Rất tiếc, bạn không được phép xóa bản thảo nào."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php:519
 msgid "Cannot create existing user."
@@ -7691,7 +7797,7 @@ msgstr "Sắp xếp bộ sưu tập theo thuộc tính của term."
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:98
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:717
 msgid "The ID for the parent of the revision."
-msgstr "ID của phiên bản cha."
+msgstr "ID của phiên bản bản thảo cha."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-terms-controller.php:995
 msgid "Type attribution for the term."
@@ -7854,21 +7960,37 @@ msgstr "Tiêu đề cho đối tượng."
 msgid "A named status for the post."
 msgstr "Trạng thái có tên của bài viết."
 
+#: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:722
+msgid "An alphanumeric identifier for the revision unique to its type."
+msgstr "Định danh chữ và số cho bản sửa đổi duy nhất cho loại của nó."
+
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:711
 msgid "The date the revision was last modified, as GMT."
 msgstr "Ngày gần nhất mà bản lưu tự động được chỉnh sửa, theo giờ GMT."
 
+#: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:705
+msgid "The date the revision was last modified, in the site's timezone."
+msgstr "Ngày sửa bài viết gần nhất, theo múi giờ của trang web."
+
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2180
+msgid "GUID for the post, transformed for display."
+msgstr "GUID của bài viết, dưới dạng hiển thị."
+
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:695
 msgid "GUID for the revision, as it exists in the database."
-msgstr "GUID của bản lưu tự động, như có sẵn trong cơ sở dữ liệu."
+msgstr "GUID của bản thảo, nếu có sẵn trong cơ sở dữ liệu."
+
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2168
+msgid "The globally unique identifier for the post."
+msgstr "Số định dạng duy nhất trên toàn trang cho bài viết."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:689
 msgid "The date the revision was published, as GMT."
-msgstr "Ngày bản lưu được xuất bản, theo giờ GMT."
+msgstr "Ngày bản thảo được công bố, theo giờ GMT."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:683
 msgid "The date the revision was published, in the site's timezone."
-msgstr "Ngày bản lưu được xuất bản, theo múi giờ của trang web."
+msgstr "Ngày bản thảo được công bố, theo múi giờ của trang web."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1423
 msgid "Invalid featured media ID."
@@ -8103,6 +8225,10 @@ msgstr "Đường dẫn đến đối tượng."
 msgid "The date the post was published, as GMT."
 msgstr "Ngày phát hành bài viết, theo giờ GMT."
 
+#: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2364
+msgid "HTML content for the post, transformed for display."
+msgstr "Nội dung HTML của bài viết, dưới dạng hiển thị."
+
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2359
 msgid "Content for the post, as it exists in the database."
 msgstr "Nội dung của bài viết, nếu nó có sẵn trong cơ sở dữ liệu."
@@ -8263,7 +8389,7 @@ msgstr "Thuộc tính bài viết"
 
 #: wp-includes/post.php:1797
 msgid "View Pages"
-msgstr "Hiển tị trang"
+msgstr "Xem trang"
 
 #: wp-includes/post.php:1797
 msgid "View Posts"
@@ -12798,7 +12924,7 @@ msgstr "Xin lỗi, không thể cập nhật được thông tin người dùng.
 
 #: wp-includes/class-wp-xmlrpc-server.php:1747
 msgid "There is a revision of this post that is more recent."
-msgstr "Bài viết này có bản sửa đổi mới hơn."
+msgstr "Bài viết này có bản thảo mới hơn."
 
 #: wp-includes/class-wp-xmlrpc-server.php:298
 msgid "Incorrect username or password."
@@ -14186,7 +14312,7 @@ msgstr "Bảo dưỡng"
 
 #: wp-includes/taxonomy.php:113
 msgid "Navigation Menus"
-msgstr "Thanh điều hướng"
+msgstr "Menu"
 
 #: wp-includes/post.php:131
 msgid "Navigation Menu Item"
@@ -14859,7 +14985,7 @@ msgstr "Không thể tạo tài khoản với tên đăng nhập bỏ trống."
 
 #: wp-includes/revision.php:328
 msgid "Cannot create a revision of a revision"
-msgstr "Không thể tạo phiên bản mới cho phiên bản"
+msgstr "Không thể tạo bản mới của bản thảo"
 
 #: wp-includes/post.php:4224
 msgid "Could not insert post into the database."
@@ -14918,13 +15044,13 @@ msgstr[0] "Đã xuất bản <span class=\"count\">(%s)</span>"
 
 #: wp-includes/post.php:110
 msgid "Revision"
-msgstr "Phiên bản tự động lưu"
+msgstr "Bản thảo"
 
 #. translators: %s: Revision date.
 #. translators: %s: Revision date with author avatar.
 #: wp-includes/post-template.php:1839 wp-includes/post-template.php:1899
 msgid "%s [Current Revision]"
-msgstr "%1$s [Phiên bản hiện tại]"
+msgstr "%s [Bản hiện tại]"
 
 #. translators: %s: Revision date.
 #. translators: %s: Revision date with author avatar.
@@ -17117,7 +17243,7 @@ msgstr "Chuyên mục Liên kết"
 #: wp-includes/post.php:109 wp-admin/includes/meta-boxes.php:1451
 #: wp-admin/revision.php:111
 msgid "Revisions"
-msgstr "Phiên bản tự động lưu"
+msgstr "Bản thảo"
 
 #: wp-includes/revision.php:34 wp-includes/js/dist/block-library.js:18287
 #: wp-includes/js/dist/edit-post.js:14244
