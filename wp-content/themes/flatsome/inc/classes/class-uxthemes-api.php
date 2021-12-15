@@ -148,7 +148,7 @@ final class UxThemes_API {
 				return $error;
 			case 409:
 				if ( $context === 'wupdates' ) {
-					// translators: %s: License manager link attributes.
+					// translators: %s: License manager link attributes.`
 					return new WP_Error( $status, sprintf( __( 'Your purchase code has been used on too many sites. Please go to <a%s>your account</a> and manage your licenses.', 'flatsome' ), $account_attrs ), $data );
 				}
 				// translators: %s: License manager link attributes. 
