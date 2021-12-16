@@ -1,0 +1,18 @@
+2021-12-16T12:33:28+00:00 CRITICAL Cannot declare class ComposerAutoloaderInit8f72f3bb7c6ee32c2a5028b2e2d64d68, because the name is already in use in E:\XAMPPP\htdocs\food\wp-content\plugins\vnpay-for-woocommerce\vendor\composer\autoload_real.php on line 4
+
+2021-12-16T12:33:30+00:00 CRITICAL Cannot declare class ComposerAutoloaderInit8f72f3bb7c6ee32c2a5028b2e2d64d68, because the name is already in use in E:\XAMPPP\htdocs\food\wp-content\plugins\vnpay-for-woocommerce\vendor\composer\autoload_real.php on line 4
+
+2021-12-16T12:33:30+00:00 CRITICAL Cannot declare class ComposerAutoloaderInit8f72f3bb7c6ee32c2a5028b2e2d64d68, because the name is already in use in E:\XAMPPP\htdocs\food\wp-content\plugins\vnpay-for-woocommerce\vendor\composer\autoload_real.php on line 4
+
+2021-12-16T13:12:19+00:00 CRITICAL Maximum execution time of 300 seconds exceeded in E:\XAMPPP\htdocs\food\wp-includes\Requests\Transport\cURL.php on line 165
+
+2021-12-16T13:15:54+00:00 CRITICAL Maximum execution time of 300 seconds exceeded in E:\XAMPPP\htdocs\food\wp-includes\Requests\Transport\cURL.php on line 165
+
+2021-12-16T13:29:00+00:00 CRITICAL Maximum execution time of 300 seconds exceeded in E:\XAMPPP\htdocs\food\wp-includes\Requests\Transport\cURL.php on line 165
+
+2021-12-16T13:42:43+00:00 CRITICAL Maximum execution time of 300 seconds exceeded in E:\XAMPPP\htdocs\food\wp-includes\Requests\Transport\cURL.php on line 165
+
+2021-12-16T13:48:51+00:00 CRITICAL Maximum execution time of 300 seconds exceeded in E:\XAMPPP\htdocs\food\wp-includes\Requests\Transport\cURL.php on line 165
+
+2021-12-16T14:51:50+00:00 CRITICAL Maximum execution time of 300 seconds exceeded in E:\XAMPPP\htdocs\food\wp-includes\Requests\Transport\cURL.php on line 165
+
