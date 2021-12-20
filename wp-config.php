@@ -1,12 +1,4 @@
 <?php
-
-//Begin Really Simple SSL session cookie settings
-@ini_set('session.cookie_httponly', true);
-@ini_set('session.cookie_secure', true);
-@ini_set('session.use_only_cookies', true);
-//END Really Simple SSL
-define( 'WP_CACHE', true );
-
 /**
  * Cấu hình cơ bản cho WordPress
  *
@@ -25,19 +17,26 @@ define( 'WP_CACHE', true );
  *
  * @package WordPress
  */
+
 // ** Thiết lập MySQL - Bạn có thể lấy các thông tin này từ host/server ** //
 /** Tên database MySQL */
 define( 'DB_NAME', 'food' );
+
 /** Username của database */
 define( 'DB_USER', 'root' );
+
 /** Mật khẩu của database */
 define( 'DB_PASSWORD', '' );
+
 /** Hostname của database */
-define( 'DB_HOST', 'localhost');
+define( 'DB_HOST', 'localhost' );
+
 /** Database charset sử dụng để tạo bảng database. */
 define( 'DB_CHARSET', 'utf8mb4' );
+
 /** Kiểu database collate. Đừng thay đổi nếu không hiểu rõ. */
 define('DB_COLLATE', '');
+
 /**#@+
  * Khóa xác thực và salt.
  *
@@ -49,15 +48,17 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         'tg E!`Ip4Jr JiNO~Bt0HZ7F-:T;0)~L<a8t/e*)G$!XqxxhdpUSu=QjsZn.5GDT' );
-define( 'SECURE_AUTH_KEY',  '[YP8Ud2wpO{uSjIG]/inFs8:v354}VHc,|BSrx5 A&V<+W{?3dr)lDw(V0-[,!.f' );
-define( 'LOGGED_IN_KEY',    '?|;?+~VVct%;f|6!rQ1BXGh7os7W}aC>8dYft*hp>w.huJ{-J{)d7jYzb.@^gxcA' );
-define( 'NONCE_KEY',        '(9*k1RtQred8a#Dgp<!]3I5bI,7>//vG};P:V[Ko@yq]$jgBXL)CDYJu9@d1l,^.' );
-define( 'AUTH_SALT',        'EMu~Nz<<LPb5oYUf#51Q&J0Wt52Pg`CG8QBnEk.u+Tz6*{SWq@izP&xP>~XeL~!e' );
-define( 'SECURE_AUTH_SALT', '7/;8MpmMxC%!@`d*}L.Pkk[,vE}2GZJeNVjQnp-9xkkErt+$G#w8{b&4M#9NwBu#' );
-define( 'LOGGED_IN_SALT',   'RaXbw[1/1@])OYU}==rv!.E~tzUc%.2)C#,,Nir|P{6,+St>o|G}qirAFh{s[5LS' );
-define( 'NONCE_SALT',       'b)l-E$,1,=0y8iCz3K9L~P%8B]H2I^bK&#P]-$/fmGveDYwW[jNxSL:JIa)j=Nw#' );
+define( 'AUTH_KEY',         'tFPN^V54&w CSH]0*Oqur$+re]XhY[dQ22Er(}iSO`Vm(~=%6P@XyPAv@pGE) EB' );
+define( 'SECURE_AUTH_KEY',  'L^Q!x]xO7iv(lKvKCf#lia8tn0_`T<8l-F;TF^|_e4{D>UYZ3i7>zT94>+lJF6}[' );
+define( 'LOGGED_IN_KEY',    'r@8p9fy|[8g^C}7o:MUg&FT6Y*v7}.KV;E&<2UcD6IR7vM-Fc9k(nigxlsQ%*+<b' );
+define( 'NONCE_KEY',        'yr/#1FShd6Vu%s1G&]]gt<v~1?V_M+&N*GmJBeJz}9Q;>f[nPTuU>yAn73t}t) k' );
+define( 'AUTH_SALT',        'XDpU>vFliR!RFQG<{Rj6G<ke+-nK`H;6VL#f}lEpSLQl,dslJ3t<2o u#Hs9!)<k' );
+define( 'SECURE_AUTH_SALT', 'Qc$f!_S )/Qc%Ph~<@C2c:+aWLPeX$J4.$rI/qdRd@`_[6F?_~WMs`Z,jpr}>R%R' );
+define( 'LOGGED_IN_SALT',   'eN?A6~);1L-r.f`l@!E9e|s4-ToJd:}`Uk_^W3k3IOd5QZpv[S+YL.E?9wS[I-:%' );
+define( 'NONCE_SALT',       ' T{gdo`6>dB8aLZ@C)jLoS[xL&_2jBjOoxFk}dP&IF*^xe68]dHE?6-F&Q,e;3gl' );
+
 /**#@-*/
+
 /**
  * Tiền tố cho bảng database.
  *
@@ -65,6 +66,7 @@ define( 'NONCE_SALT',       'b)l-E$,1,=0y8iCz3K9L~P%8B]H2I^bK&#P]-$/fmGveDYwW[jN
  * Chỉ sử dụng số, ký tự và dấu gạch dưới!
  */
 $table_prefix = 'wp_';
+
 /**
  * Dành cho developer: Chế độ debug.
  *
@@ -75,12 +77,13 @@ $table_prefix = 'wp_';
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
-define('WP_DEBUG', true);
-define('SAVEQUERIES', true);
-define('WP_MEMORY_LIMIT', '256M');
+define('WP_DEBUG', false);
+
 /* Đó là tất cả thiết lập, ngưng sửa từ phần này trở xuống. Chúc bạn viết blog vui vẻ. */
+
 /** Đường dẫn tuyệt đối đến thư mục cài đặt WordPress. */
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
+
 /** Thiết lập biến và include file. */
 require_once(ABSPATH . 'wp-settings.php');
